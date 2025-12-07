@@ -1,10 +1,10 @@
 a= int(input())
-line_1= set(map(input().split()))
+line_1= set(map(int, input().split()))
 
 n= int(input())
 
 for _ in range(n):
-    operation= input().split()
+    operation, _= input().split()
     line_2= set(map(int, input().split()))
 
     if(operation== "intersection_update"):
@@ -19,4 +19,4 @@ for _ in range(n):
     elif(operation== "difference_update"):
         line_1.difference_update(line_2)
 
-print(sum(line_2))
+print(sum(line_1))
