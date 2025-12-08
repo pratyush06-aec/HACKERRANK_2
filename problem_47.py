@@ -1,0 +1,11 @@
+from collections import Counter
+
+a= int(input())
+room_numbers= list(map(int, input().split()))
+
+room_count= Counter(room_numbers)
+
+for room, count in room_count.items():
+    if(count==1):
+        print(room)
+        break
