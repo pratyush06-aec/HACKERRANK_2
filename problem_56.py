@@ -19,3 +19,7 @@ def key(c):
 
 
 print(''.join(sorted(s, key=key)))
+
+
+# ((group) indicates the order, i.e, group=0 means lower, group=1 means upper, group=2 means digits)
+# ((sub) indicates the order also, i.e, sub=0 means odd number and sub=1 means even number) 
